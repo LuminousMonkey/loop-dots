@@ -1,0 +1,14 @@
+(
+    set -xe
+    [ -d ~/.zsh ]
+    subdirs=(.zsh/env .zsh/profile .sh .zsh/rc .zsh/login)
+    if [ -e ~/.zsh/env/_echo ]; then
+        for n in $subdirs; do
+            rm ~/$n/_echo || true
+        done
+    else
+        for n in $subdirs; do
+            echo 'echo "+ In $n"' >| ~/$n/_echo || true
+        done
+    fi
+)
