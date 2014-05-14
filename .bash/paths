@@ -1,5 +1,7 @@
 # Add some useful directories to our PATH if necesary
+kernel_major_minor=`expr match \`uname -r\` '\([0-9][.][0-9]\)'` 
 paths="${HOME}/.local/`uname -r`/bin "
+paths=$paths"${HOME}/.local/${kernel_major_minor}/bin "
 paths=$paths"/usr/local/smlnj-110.75/bin "
 paths=$paths"/usr/local/bin "
 paths=$paths"${HOME}/bin ${HOME}/.local/gwt-2.5.0.rc1 ${HOME}/.local/appengine-java-sdk-1.7.6/bin "
