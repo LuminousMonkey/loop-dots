@@ -6,3 +6,5 @@ source ~/.../lib/tracefuncs
 source ~/.../lib/basics
 ...eachsource .zshenv
 ...sourcedircontents ~/.zsh/env
+
+export PATH="$HOME/.local/bin:$PATH"
