@@ -7,3 +7,5 @@ source ~/.../lib/scripting
 ...eachsource .zlogin
 ...sourcedircontents ~/.zsh/login
 ...fileend .zlogin
+
+export PATH="$HOME/.local/bin:$PATH"
