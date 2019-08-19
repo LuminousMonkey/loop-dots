@@ -1,15 +1,13 @@
 # Add some useful directories to our PATH if necesary
-kernel_major_minor=`expr match \`uname -r\` '\([0-9][.][0-9]\)'` 
+kernel_major_minor=`expr match \`uname -r\` '\([0-9][.][0-9]\)'`
 paths="${HOME}/.local/`uname -r`/bin "
 paths=$paths"${HOME}/.local/${kernel_major_minor}/bin "
 paths=$paths"/usr/local/smlnj-110.75/bin "
 paths=$paths"/usr/local/bin "
 paths=$paths"${HOME}/bin ${HOME}/.local/gwt-2.5.0.rc1 ${HOME}/.local/appengine-java-sdk-1.7.6/bin "
 paths=$paths"${HOME}/.local/bin ${HOME}/.local/gwt-2.5.0.rc1 ${HOME}/.local/appengine-java-sdk-1.7.0/bin "
-paths=$paths"${HOME}/.local/clojurescript/bin ${HOME}/.gem/ruby/1.9.1/bin "
-paths=$paths"${HOME}/.gem/ruby/1.9.1/bin "
-paths=$paths"${HOME}/.local/texlive/2013/bin/i386-cygwin "
-paths=$paths"${HOME}/.gem/ruby/1.8/bin ${HOME}/.local/jruby-1.5.6/bin ${HOME}/.local/bin "
+paths=$paths"${HOME}/.local/clojurescript/bin "
+paths=$paths"${HOME}/.local/idea/bin "
 paths=$paths"${HOME}/.local/context/tex/texmf-osx-64/bin "
 paths=$paths"${HOME}/.local/context/tex/texmf-linux-64/bin /sbin /usr/sbin"
 
